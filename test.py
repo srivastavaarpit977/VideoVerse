@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 import json
 import os
-
+ 
 # Loading the pre-trained model
 model = YOLO('/home/arpit-srivastava/Desktop/logo_detection/best(1).pt')
 
