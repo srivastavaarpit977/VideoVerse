@@ -6,10 +6,10 @@
 This project provides a pipeline for detecting Pepsi and CocaCola Brand Logos in the video file with their respective timestamps.It consists of:
 
 - `model`- It has `best.pt` which is a file that contains the weights and configuration of the model that achieved the best performance during the training process.
-- `Approach document`-It contains the workflow of the model as to which libraries I used,how I trained my model etc.
+- `ApproachDocument`-It contains the workflow of the model as to which libraries I used,how I trained my model etc.
 - `test.py`-This file helps in detecting the logo with their respective timestamps and calculate size and distance from the centre.
-- `results1.json`-It contains the timestamps of the brand detection.
-- `logo_detection.pdf`-It contains the whole process of training the model,the dataset I chose and how I trained my model.
+- `results.json`-It contains the timestamps of the brand detection.
+- `logoDetection.pdf`-It contains the whole process of training the model,the dataset I chose and how I trained my model.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ This project provides a pipeline for detecting Pepsi and CocaCola Brand Logos in
 - Python 3.7+
 - OpenCV
 - Ultralytics YOLO
-- Jupyter Notebook (for `logo_detection.pdf`)[converted from .ipynb]
+- Jupyter Notebook (for `logoDetection.pdf`)[converted from .ipynb]
 - roboflow
 
 ## Setup
@@ -38,13 +38,13 @@ This project provides a pipeline for detecting Pepsi and CocaCola Brand Logos in
     pip install opencv-python ultralytics jupyter roboflow
     ```
 
-3. Make sure you have the trained YOLO model file (`best.pt`) using the `logo_detection.pdf`.
+3. Make sure you have the trained YOLO model file (`best.pt`) using the `logoDetection.pdf`.
 
 ## Usage
 
 ### Running the Python Script
 
-The `test.py` script processes a video file to detect the logo of respective brands and record their timestamps in the file `results1.json`.
+The `test.py` script processes a video file to detect the logo of respective brands and record their timestamps in the file `results.json`.
 
 1. Open a terminal and navigate to the directory containing `test.py`.
 
@@ -54,15 +54,15 @@ The `test.py` script processes a video file to detect the logo of respective bra
     python test.py
     ```
 
-3. The script will read the video file, perform logo detection, and save the timestamps of detected objects in a JSON file named `results1.json`.
+3. The script will read the video file which is in the `.mp4` format, perform logo detection, and save the timestamps of detected objects in a JSON file named `results.json`.
 
 ### Using the Jupyter Notebook
 
-The `logo_detection.pdf` from `logo_detection.ipynb` notebook provides an interactive interface for custom model training on CocaCola and pepsi logo.
+The `logodetection.pdf` from `logoDetection.ipynb` notebook provides an interactive interface for custom model training on CocaCola and pepsi logo.
 
 ## Output
 
-- The `test.py` script outputs a `results1.json` file containing the timestamps of detected objects in the following format:
+- The `test.py` script outputs a `results.json` file containing the timestamps of detected objects in the following format:
 
     ```json
     {
