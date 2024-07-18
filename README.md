@@ -1,7 +1,7 @@
 # # DEMO VIDEO--https://www.loom.com/share/9d7dc6a85d4c40c29e1062fa5524b664?sid=b7ed10bf-dcdd-4a57-a992-5c104a5c27e0
 
 
-# Pepsi and CocaCola Brand Detection Model
+# Pepsi and CocaCola Brand Detection Model 
 
 This project provides a pipeline for detecting Pepsi and CocaCola Brand Logos in the video file with their respective timestamps.It consists of:
 
